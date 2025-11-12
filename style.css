@@ -8,7 +8,7 @@ h1 {display: none;}
 h2 { font-size: 30px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
 .bords { width: 20%; }
 section { width: 100vw; height: 100vh; }
-p { color: black; font-size: 30px;font-family: Roboto-regul; }
+p { color: black; font-size: 25px;font-family: Roboto-regul; }
 .de{ font-size: 25px; }
 section {
     margin: 2em auto 0 auto;
@@ -19,7 +19,7 @@ section {
 }
 .content {
     background-color: rgba(255,255,255,0.8);
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0px 0px 10px black;
     border-radius: 20px;
     width: 60%;margin:0 auto !important;
@@ -103,7 +103,14 @@ section {
 /***************exemple titre jeux**********/
 img:hover{ background-position: 0% 0%; } 
 /*****************variantes***************/
-#container-tuiles { display: flex; flex-direction: row;justify-content: space-around;padding: 10px;}
+#container-tuiles 
+{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
 #container-tuiles * { width: 45%;}
 #container-video { display: flex; flex-direction: column;align-content: center;}
 #container-video video, #container-video span { width:100%}
