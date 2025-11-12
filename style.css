@@ -1,30 +1,17 @@
+
+      @font-face { font-family: Roboto-regul; src: url('assets/fonts/Roboto_Regular.ttf'); } 
+      @font-face { font-family: Roboto-bold; src: url('assets/fonts/Roboto_Bold.ttf'); } 
 /***********general***************/
 * { margin: 0;padding: 0;}
 body { background-color: black; }
 h1 {display: none;}
-h2 { font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;}
+h2 { font-size: 30px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
 .bords { width: 20%; }
 section { width: 100vw; height: 100vh; }
-p { color: black; font-size: 30px; }
-#bienvenue{
-    width:60%;
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(255,255,255);
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 20px;
-    
-}
-.de{
-    font-size: 25px;
-
-}
+p { color: black; font-size: 30px;font-family: Roboto-regul; }
+.de{ font-size: 25px; }
 section {
-    margin: 2em auto;
+    margin: 2em auto 0 auto;
     padding-top: 160px;
     display: flex;
     flex-direction: column;
@@ -37,10 +24,7 @@ section {
     border-radius: 20px;
     width: 60%;margin:0 auto !important;
 }
-
-.liste-a-puce-1{
-    font-size: 30px;
-}
+#bienvenue { text-align: center;}
 /***********barre de navigation**************/
 #navigation 
 {
@@ -75,13 +59,8 @@ section {
     justify-content: space-around;
     align-items: center;
 }
-#nav-tel a{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-#nav-tel a:hover { color:#ffd700; text-decoration: underline;}
+#nav-tel a { color: white; text-transform: uppercase; text-decoration: none; font-size: 1.5rem; }
+#nav-tel a:hover { color:#ffd700; text-decoration: underline; }
 .btn-nav
  {          margin-right:20px;;
             padding: 8px;
@@ -97,12 +76,13 @@ section {
             text-decoration: none;
             text-transform: uppercase;
  } 
-.btn-nav:hover
-{ 
-        transition: 0.3s ;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 1.3);
-}
+.btn-nav:hover { transition: 0.3s; box-shadow: 4px 4px 10px rgba(0, 0, 0, 1.3); }
 
+#jeu-de-role { background-image: url("assets/images/image_jdr.jpg"); }
+#how-to { background-image: url("assets/images/background-dice.jpg"); }
+#master { background-image: url("assets/images/background-howto.jpg"); }
+#jeux{ background-image: url("assets/images/background-differents-jeux.jpg"); }
+#variante{ background-image: url("assets/images/back-variante.jpg");}
 /***************accueil*********************/
 #accueil {
     margin-top: 0 !important;
@@ -112,41 +92,47 @@ section {
 }
 
 /***************secret*********************/
-#secret { color:black; text-align: center;cursor:none; font-size: 10px;}
+#secret { color:black; text-align: center;cursor:none; font-size: 10px; }
 
 /***************jeux de role*********************/
-#jeu-de-role {
-    background-image: url("assets/images/image_jdr.jpg");
+#jeu-de-role , #how-to, #master, #jeux, #variante
+{
     background-repeat: no-repeat;
     background-size: cover;
-}
-/*****************how-to********************/
-#how-to {
-    background-image: url("assets/images/background-dice.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-/*****************master******************/
-#master {
-    background-image: url("assets/images/background-howto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 /***************exemple titre jeux**********/
-#jeux{
-    background-image: url("assets/images/background-differents-jeux.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#marque_blanche{text-align: center; }
 img:hover{ background-position: 0% 0%; } 
-
-
+/*****************variantes***************/
+#container-tuiles { display: flex; flex-direction: row;justify-content: space-around;padding: 10px;}
+#container-tuiles * { width: 45%;}
+#container-video { display: flex; flex-direction: column;align-content: center;}
+#container-video video, #container-video span { width:500px}
+/***************marque blanche**********/
+#footer { padding: 5px auto;}
+#marque_blanche{text-align: center; color:white; font-size: 15px; line-height: 15px;}
+/**************************************/
+/***************Media queries**********/
+/**************************************/
 @media (min-width: 320px) and (max-width: 768px) {
-    #navigation { width: 100vw;     align-items: center;}
+    p { font-size: 20px; text-align: justify;}
+    #navigation { width: 100vw; align-items: center;}
     #nav-ordi { display: none;}
     #btn-menu {display: block;}
+    #accueil, #jeu-de-role, #how-to,#master, #jeux, #variante { background-position:center ;}
+    .content { width: 90% !important;}
+    /*premiere section*/
+    #bienvenue p { text-align: center;}
+    /*seconde section */
+    /*****variante**/
+    #container-tuiles { flex-direction: column;}
+    #exemple-jeux { margin-bottom: 20px;}
+    #exemple-jeux, #container-video { width: 100%;}
+    #container-video video, #container-video span { margin: auto;}
+    #container-video span { text-align:center}
 
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    #container-video video, #container-video span { width:90%}
 }

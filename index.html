@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de jeux de role</title>
+    <title>Club de jeux de rôle</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Favicon classique -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+    <!-- Fichier .ico (compatibilité maximale) -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!-- Variante Apple (pour iPhone, iPad, etc.) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+
+    <!-- Variante pour Windows (pinned site / tiles) -->
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+
+    <!-- Couleur du thème du navigateur (Android, Windows, Safari) -->
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -21,7 +36,8 @@
             <a href="#jeu-de-role" class="btn-nav">Le jeu de rôle</a>
             <a href="#how-to" class="btn-nav">comment jouer</a>
             <a href="#master" class="btn-nav">qui dirige</a>
-            <a href="#Les-differents-jeux" class="btn-nav">les jeux</a>
+            <a href="#jeux" class="btn-nav">les jeux</a>
+            <a href="#variante" class="btn-nav">variations</a>
         </div>
 
         <button id="btn-menu" class="btn-nav" onclick=handleclick()>MENU</button>
@@ -33,13 +49,15 @@
             <a href="#jeu-de-role" class="btn-menu-tel" >Le jeu de rôle</a>
             <a href="#how-to" class="btn-menu-tel">On fait quoi au JDR</a>
             <a href="#master" class="btn-menu-tel" >Le maitre du jeu</a>
-            <a href="#Les-differents-jeux" class="btn-menu-tel">les differents jeux</a>            
+            <a href="#jeux" class="btn-menu-tel">les differents jeux</a> 
+            <a href="#variante" class="btn-menu-tel">variations</a>           
         </div>
     </nav>
 
     <!--------------------SLOGAN----------------->
     <section id="accueil">
-        <div id="bienvenue">
+        <div class="content" id="bienvenue">
+            <h2>Proverbe rôliste</h2>
             <p>Les dragons ne tuent pas les joueurs... </br> Le maître du jeu oui !!!</p>
         </div>
     </section>
@@ -99,15 +117,39 @@
     <!--------------------SECTION EXEMPLE DE TITRE DE JEUX----------------->
     <section id="jeux">
         <div class="content">
-            <h2>Les les differents jeux:</h2>
+            <h2>Les differents jeux:</h2>
             <br>
-            <p class="exemple_jeux">Il y a types de jeux de roles tel que les jeux de roles post-apocalyptique, cyberpunk, medieval fantasy, voyage dans le temps etc <br>comme jeux de role tres connu nous avons: Donjons et dragons, warhammer, chronique oublies et biens d'autre.</p>
+            <p class="exemple_jeux">Les trois franchises les plus connues sont "Donjons et Dragons" ,"Warhammer" et "L'appel de Cthulhu"
+                 Les deux premières sont basées sur un univers medieval fantasy. La troisième est issue de l'oeuvre de Lovecraft.
+                 Elle mise sur un univers contemporain ou règne le désordre et le chaos tapis dans l'ombre et la folie. 
+                 Il exite aussi de nombreux jeux sur des univers riches et variés : post-apocalyptique, cyberpunk, zombies, futuristique, 
+                 voyage dans le temps, etc... .</p>
+        </div>
+    </section>
+    <!--------------------SECTION VARIANTE JEUX----------------->
+    <section id="variante">
+        <div class="content">
+            <h2>Les variation du jeux de rôle:</h2>
+            <div id="container-tuiles">
+                <p id="exemple-jeux">
+                    il existe plusieurs variantes du jeu de rôle traditionnel comme les <strong>jeux de plateau</strong>,
+                    les <strong>jeux vidéos</strong> ou encore les <strong>jeux de rôle grandeur nature</strong>. Le principe est 
+                    encore une fois d'utiliser son imagination pour donner vie au scénario du maitre du jeu.
+                    voici un  extrait.    
+                </p>
+                <div id="container-video">
+                    <video controls >
+                        <source src="assets/video/redfang.mp4" type="video/mp4" />
+                    </video>
+                    <span> (crédits: REDFANG/Prehistoric Dog)... </span>
+                </div>
+            </div>
         </div>
     </section>
     <!--------------------SECTION FOOTER----------------->
-    <section id="footer">        
-        <p id="marque_blanche">Evan Joly 2025 - Tous droits réservés</p>
-    </section>
+    <div id="footer">        
+        <p id="marque_blanche">Evan Joly 201 - 2025 - Tous droits réservés</p>
+    </div>
     
     </body>
 
