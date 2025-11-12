@@ -116,7 +116,7 @@ section {
 
 /***************jeux de role*********************/
 #jeu-de-role {
-    background-image: url("assets/images/image_jdr.webp");
+    background-image: url("assets/images/image_jdr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -129,14 +129,14 @@ section {
 }
 /*****************master******************/
 #master {
-    background-image: url("assets/images/background-howto.png");
+    background-image: url("assets/images/background-howto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 /***************exemple titre jeux**********/
 #Les-differents-jeux{
-    background-image: url("assets/images/background-differents-jeux.png");
+    background-image: url("assets/images/background-differents-jeux.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -152,7 +152,7 @@ img:hover{
 } 
 
 
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 768px) {
     #navigation { width: 100vw;     align-items: center;}
     #nav-ordi { display: none;}
     #btn-menu {display: block;}
