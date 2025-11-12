@@ -106,7 +106,7 @@ img:hover{ background-position: 0% 0%; }
 #container-tuiles { display: flex; flex-direction: row;justify-content: space-around;padding: 10px;}
 #container-tuiles * { width: 45%;}
 #container-video { display: flex; flex-direction: column;align-content: center;}
-#container-video video, #container-video span { width:500px}
+#container-video video, #container-video span { width:100%}
 /***************marque blanche**********/
 #footer { padding: 5px auto;}
 #marque_blanche{text-align: center; color:white; font-size: 15px; line-height: 15px;}
