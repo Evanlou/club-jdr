@@ -106,7 +106,7 @@ section {
 /***************accueil*********************/
 #accueil {
     margin-top: 0 !important;
-    background-image: url('assets/images/background-accueuil.png');
+    background-image: url('assets/images/background-accueuil.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -135,21 +135,13 @@ section {
 
 }
 /***************exemple titre jeux**********/
-#Les-differents-jeux{
+#jeux{
     background-image: url("assets/images/background-differents-jeux.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.Button{
-    font-size: 50px;
-}
-
-#marque_blanche{text-align: center;}
-
-
-img:hover{
-    background-position: 0% 0%;
-} 
+#marque_blanche{text-align: center; }
+img:hover{ background-position: 0% 0%; } 
 
 
 @media (min-width: 320px) and (max-width: 768px) {

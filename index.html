@@ -97,7 +97,7 @@
         <div class="bords"></div>
     </section>
     <!--------------------SECTION EXEMPLE DE TITRE DE JEUX----------------->
-    <section id="Les-differents-jeux">
+    <section id="jeux">
         <div class="content">
             <h2>Les les differents jeux:</h2>
             <br>
@@ -111,20 +111,23 @@
     
     </body>
 
+    <!--------------------JAVASCRIPT---------------------->
     <script>
+
+        
         let menu = document.getElementById('nav-tel');
+        let btnMenuTel = document.querySelectorAll('.btn-menu-tel');
 
         function handleclick() {
             menu.style.left="0px";
         }
 
-        let btnMenuTel = document.querySelectorAll('.btn-menu-tel');
 
         btnMenuTel.forEach((item) => {
-        item.addEventListener('click', () => {
-        menu.style.left = "2000px";
-    });
-});
+            item.addEventListener('click', () => {
+                menu.style.left = "2000px";
+            });
+        });
 
     </script>
 </html>
