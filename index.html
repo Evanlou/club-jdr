@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de jeux de role</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+
+    <h1>Le club de jeux de role</h1>
+    <!--------------------NAVIGATION----------------->
+    <nav id="navigation">
+        <a href="#">
+            <img src="assets/images/logo.png" alt="de de jeu de role avec le nom du club roleplay club" id="logo" href="#acceuil" />
+        </a>
+        <div id="nav-ordi">
+            <a href="#jeu-de-role" class="btn-nav">Le jeu de rôle</a>
+            <a href="#how-to" class="btn-nav">comment jouer</a>
+            <a href="#master" class="btn-nav">qui dirige</a>
+            <a href="#Les-differents-jeux" class="btn-nav">les jeux</a>
+        </div>
+
+        <button id="btn-menu" class="btn-nav" onclick=handleclick()>MENU</button>
+
+        <div id="nav-tel">
+            <a href="#" class="btn-menu-tel">
+                <img src="assets/images/logo.png"  alt="de de jeu de role avec le nom du club roleplay club" id="logo"/>
+            </a>
+            <a href="#jeu-de-role" class="btn-menu-tel" >Le jeu de rôle</a>
+            <a href="#how-to" class="btn-menu-tel">On fait quoi au JDR</a>
+            <a href="#master" class="btn-menu-tel" >Le maitre du jeu</a>
+            <a href="#Les-differents-jeux" class="btn-menu-tel">les differents jeux</a>            
+        </div>
+    </nav>
+
+    <!--------------------SLOGAN----------------->
+    <section id="accueil">
+        <div id="bienvenue">
+            <p>Les dragons ne tuent pas les joueurs... </br> Le maître du jeu oui !!!</p>
+        </div>
+    </section>
+    <p id="secret">3iwQ2ohj8fNqErzoXfYt</p>
+
+    <!--------------------SECTION JEU DE ROLE----------------->
+    <section id="jeu-de-role">
+        <div class="bords"></div>
+        <div class="content">            
+            <h2>Qu'est ce que le jeux de role ?</h2>
+            <p>Le jeu de rôle est un jeu narratif et interactif où chaque joueur interprète un personnage doté de caractéristiques, d'objectifs et d'une personnalité propres. Les actions des personnages influencent le deroulement d’une histoire collective, animée et encadrée par un maître du jeu (ou meneur de jeu), qui décrit le monde, interprète les personnages non joueurs et arbitre les règles.</p>
+        </div>
+        <div class="bords"></div>
+    </section>
+
+    <!--------------------SECTION COMMENT JOUER----------------->
+    <section id="how-to">
+        <div class="bords"></div>
+        <div class="content">
+            <h2>Comment jouer ?</h2>
+
+            <p>Il y a deux choses qu'il faut absolument pour pouvoir 
+                joueur au jeu de rôle: <br/>
+                - de l'imagination (de préférence débordante...) <br/>
+                - des dés (beaucoup, pleins, vraiment beaucoup...)
+                </p>
+                <p>   
+                    Pendant une partie de jeu de rôle, nous incarnons differents
+                     personnages dans un univers particulier. Nous combattons maintes 
+                     creatures et viles sacripans pour deffendre notre pays. 
+                </p>
+                <p>
+                    Les actions comme les combats se déroulent au tour par tour.
+                    Chaque action verra sa reussite ou son échec selon le résultat 
+                    de son jet de dés et des ses attributs.
+                </p>
+            </div>
+        <div class="bords"></div>
+
+    </section>
+    <!--------------------SECTION LE MAITRE DU JEU----------------->
+    <section id="master">
+        <div class="bords"></div>
+        <div class="content">
+            <h2>Qui dirige le jeu de role ?</h2>
+            <p>Le maître du jeu est le narrateur, arbitre et guide du jeu de rôle. 
+                Il decrit le monde dans lequel évoluent les joueurs, joue les 
+                personnages secondaires, présente les situations et les defis, 
+                et veille au respect des règles. Il adapte aussi le scénario selon
+                 les choix des joueurs, afin que l’histoire reste cohérente et 
+                 intéressante pour tous.
+            </p>
+        </div>      
+        
+        <div class="bords"></div>
+    </section>
+    <!--------------------SECTION EXEMPLE DE TITRE DE JEUX----------------->
+    <section id="Les-differents-jeux">
+        <div class="content">
+            <h2>Les les differents jeux:</h2>
+            <br>
+            <p class="exemple_jeux">Il y a types de jeux de roles tel que les jeux de roles post-apocalyptique, cyberpunk, medieval fantasy, voyage dans le temps etc <br>comme jeux de role tres connu nous avons: Donjons et dragons, warhammer, chronique oublies et biens d'autre.</p>
+        </div>
+    </section>
+    <!--------------------SECTION FOOTER----------------->
+    <section id="footer">        
+        <p id="marque_blanche">Evan Joly 2025 - Tous droits réservés</p>
+    </section>
+    
+    </body>
+
+    <script>
+        let menu = document.getElementById('nav-tel');
+
+        function handleclick() {
+            menu.style.left="0px";
+        }
+
+        let btnMenuTel = document.querySelectorAll('.btn-menu-tel');
+
+        btnMenuTel.forEach((item) => {
+        item.addEventListener('click', () => {
+        menu.style.left = "2000px";
+    });
+});
+
+    </script>
+</html>

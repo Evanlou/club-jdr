@@ -1,0 +1,160 @@
+/***********general***************/
+* { margin: 0;padding: 0;}
+body { background-color: black; }
+h1 {display: none;}
+h2 { font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;}
+.bords { width: 20%; }
+section { width: 100vw; height: 100vh; }
+p { color: black; font-size: 30px; }
+#bienvenue{
+    width:60%;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(255,255,255);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.de{
+    font-size: 25px;
+
+}
+section {
+    margin: 2em auto;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content {
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    width: 60%;margin:0 auto !important;
+}
+
+.liste-a-puce-1{
+    font-size: 30px;
+}
+/***********barre de navigation**************/
+#navigation 
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top:0;
+    position:fixed;
+}
+#logo { width: 150px;}
+#btn-menu { display:none; }
+#nav-ordi{
+    height: 100%;
+    height:150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#nav-ordi a{ height:40px; line-height: 40px;}
+#nav-tel 
+{ 
+    position: absolute; 
+    top: 0; 
+    left: 2000px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-tel a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#nav-tel a:hover { color:#ffd700; text-decoration: underline;}
+.btn-nav
+ {          margin-right:20px;;
+            padding: 8px;
+            color: black;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: #A7001E;
+            background-color: #DA7B27;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.541);
+            text-decoration: none;
+            text-transform: uppercase;
+ } 
+.btn-nav:hover
+{ 
+        transition: 0.3s ;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 1.3);
+}
+
+/***************accueil*********************/
+#accueil {
+    margin-top: 0 !important;
+    background-image: url('assets/images/background-accueuil.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/***************secret*********************/
+#secret { color:black; text-align: center;cursor:none; font-size: 10px;}
+
+/***************jeux de role*********************/
+#jeu-de-role {
+    background-image: url("assets/images/image_jdr.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*****************how-to********************/
+#how-to {
+    background-image: url("assets/images/background-dice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*****************master******************/
+#master {
+    background-image: url("assets/images/background-howto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/***************exemple titre jeux**********/
+#Les-differents-jeux{
+    background-image: url("assets/images/background-differents-jeux.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Button{
+    font-size: 50px;
+}
+
+#marque_blanche{text-align: center;}
+
+
+img:hover{
+    background-position: 0% 0%;
+} 
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+    #navigation { width: 100vw;     align-items: center;}
+    #nav-ordi { display: none;}
+    #btn-menu {display: block;}
+
+}
